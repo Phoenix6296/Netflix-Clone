@@ -1,0 +1,111 @@
+.profileScreen {
+  height: 100vh;
+  color: white;
+}
+.profileScreen-body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8%;
+  max-width: 800px;
+}
+.profileScreen-info {
+  display: flex;
+}
+.profileScreen-body > h1 {
+  font-size: 60px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 20px;
+}
+.profileScreen-details {
+  color: white;
+  margin-left: 25px;
+  flex: 1;
+}
+.profileScreen-details > h2 {
+  background-color: gray;
+  user-select: none;
+  padding: 15px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.profileScreen-signOut {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5%;
+  width: 100%;
+  color: #fff;
+  background-color: #ed3833;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.profileScreen-plans {
+  margin-top: 10px;
+}
+.profileScreen-plans > h3 {
+  border-bottom: 1px solid #282c28;
+  padding: 10px;
+}
+.profileScreen-info > img {
+  height: 100px;
+}
+
+.profileScreen-plans > p {
+  border-bottom: 1px solid #282c28;
+  padding: 10px;
+}
+.profileScreen-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-bottom: 1px solid #282c28;
+}
+.profileScreen-plan:hover {
+  background-color: #1b1a1a;
+}
+.profileScreen-plan > button {
+  background-color: #ed3833;
+  color: white;
+  font-weight: 600;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.profileScreen-plan > button:hover {
+  background-color: #bb251f;
+}
+#plan-chosen {
+  background-color: gray;
+}
+
+@media only screen and (max-width: 900px) {
+  .profileScreen-plan {
+    text-align: center;
+    flex-direction: column;
+  }
+  .profileScreen-plan > div {
+    margin-bottom: 10px;
+  }
+  .profileScreen-info > img {
+    height: 50px;
+  }
+  .profileScreen-body > h1 {
+    font-size: 2rem;
+  }
+  .profileScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profileScreen-body {
+    display: flex;
+    justify-content: center;
+    margin-left: 15% !important;
+  }
+}
